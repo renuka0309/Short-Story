@@ -47,7 +47,7 @@ blockquote{margin:28px 0;padding:4px 20px;border-left:3px solid var(--accent);fo
 @keyframes rise{0%{transform:translateY(0);opacity:0}30%{opacity:.9}100%{transform:translateY(-14px);opacity:0}}
 .tw{animation:tw 2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
 @keyframes tw{50%{transform:scale(1.5);opacity:.4}}
-.rv{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}.rv.vis{opacity:1;transform:none}
 .rf{display:grid;gap:12px;font:15px system-ui,sans-serif}
 .rf input,.rf select,.rf textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);font:inherit}
 .rf button{justify-self:start;background:var(--accent);color:var(--bg);border:0;border-radius:999px;padding:10px 22px;font-weight:600;cursor:pointer}
@@ -55,3 +55,5 @@ blockquote{margin:28px 0;padding:4px 20px;border-left:3px solid var(--accent);fo
 .about{padding-top:48px}.mail{font-family:system-ui,sans-serif;font-size:15px}
 footer{text-align:center;padding:24px 20px calc(36px + env(safe-area-inset-bottom,0px));color:var(--muted);font:13px system-ui,sans-serif}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+.brand{white-space:nowrap}
+@media (max-width:520px){.in{gap:8px}.in nav{gap:10px;font-size:13px}.in nav a:nth-child(3){display:none}.brand{font-size:18px}}
