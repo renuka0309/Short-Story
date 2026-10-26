@@ -24,7 +24,7 @@ function onScroll(){
 addEventListener('scroll',onScroll,{passive:true});onScroll();
 var els=d.querySelectorAll('article p,article h2,article blockquote,.about p');
 if('IntersectionObserver' in window){
- var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.08});
+ var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('vis');io.unobserve(x.target)}})},{threshold:.08});
  els.forEach(function(e){e.classList.add('rv');io.observe(e)});
 }
 /* Comments via Giscus: fill these after enabling Discussions (see giscus.app) */
