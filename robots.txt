@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://renuka0309.github.io/Short-Story/sitemap.xml
